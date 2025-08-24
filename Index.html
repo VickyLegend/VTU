@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MyVTU – Instant Airtime, Data, Bills</title>
+    <meta
+      name="description"
+      content="Instant VTU: Airtime, Data, Cable TV,
+Electricity – fast, secure and reliable."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?
+family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/style.css" />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <header class="topbar">
+      <div class="container row between center-v">
+        <a class="brand" href="index.html">MyVTU</a>
+        <nav class="nav">
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+          <a class="btn btn-sm btn-ghost" href="login.html">Login</a>
+          <a class="btn btn-sm" href="register.html">Create Account</a>
+        </nav>
+      </div>
+      1
+    </header>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Fast VTU for Airtime, Data & Bills</h1>
+          <p>
+            Top up in seconds. Pay less. Get more. Secure, reliable, and 24/7.
+          </p>
+          <div class="row gap">
+            <a class="btn" href="register.html">Get Started</a>
+            <a class="btn btn-ghost" href="login.html">Sign in</a>
+          </div>
+          <div class="trust row gap-sm">
+            <span class="badge">MTN</span>
+            <span class="badge">Airtel</span>
+            <span class="badge">Glo</span>
+            <span class="badge">9mobile</span>
+            <span class="badge">DSTV</span>
+            <span class="badge">PHCN</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="card glass">
+            <h3>Quick Top-up</h3>
+            <form action="#" method="post">
+              <label>
+                <span>Network</span>
+                <select name="network" required>
+                  <option value="">Select network</option>
+                  <option>MTN</option>
+                  <option>Airtel</option>
+                  <option>Glo</option>
+                  <option>9mobile</option>
+                </select>
+              </label>
+              <label>
+                <span>Phone Number</span>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="08012345678"
+                  required
+                />
+              </label>
+              <label>
+                <span>Amount (₦)</span>
+                <input
+                  type="number"
+                  name="amount"
+                  min="50"
+                  step="50"
+                  placeholder="500"
+                  required
+                />
+              </label>
+              <button class="btn w-full" type="submit">Recharge Now</button>
+              2
+            </form>
+            <p class="muted xs">
+              Note: Demo only. Connect your VTU script to enable processing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="center">What we offer</h2>
+        <p class="center muted">
+          Affordable rates • Instant delivery • Reliable support
+        </p>
+        <div class="grid cards-4">
+          <article class="card hover">
+            <h3>Airtime Top-up</h3>
+            <p>Recharge all networks instantly at discounted rates.</p>
+          </article>
+          <article class="card hover">
+            <h3>Data Bundles</h3>
+            <p>Buy cheap data plans that actually last.</p>
+          </article>
+          <article class="card hover">
+            <h3>Cable TV</h3>
+            <p>DSTV, GOTV & Startimes subscriptions—seamless and fast.</p>
+          </article>
+          <article class="card hover">
+            <h3>Electricity</h3>
+            <p>Prepaid & Postpaid tokens delivered instantly.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- Pricing -->
+    <section id="pricing" class="section alt">
+      <div class="container">
+        <h2 class="center">Simple pricing</h2>
+        <p class="center muted">
+          Pick a plan that fits your usage. Upgrade anytime.
+        </p>
+        <div class="row wrap gap center-h">
+          <div class="price card">
+            <h3>Starter</h3>
+            <p class="muted">Personal use</p>
+            <div class="price-tag">₦1,000</div>
+            3
+            <ul class="list">
+              <li>Airtime & Data</li>
+              <li>Standard support</li>
+            </ul>
+            <a class="btn w-full" href="register.html">Choose</a>
+          </div>
+          <div class="price card featured">
+            <h3>Pro</h3>
+            <p class="muted">SMEs & Resellers</p>
+            <div class="price-tag">₦5,000</div>
+            <ul class="list">
+              <li>All Starter features</li>
+              <li>Cable & Electricity</li>
+              <li>Priority support</li>
+            </ul>
+            <a class="btn w-full" href="register.html">Choose</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact / Footer -->
+    <footer id="contact" class="footer">
+      <div class="container row between wrap gap">
+        <div>
+          <h3>MyVTU</h3>
+          <p class="muted">
+            Fast VTU for Nigeria—built for speed and reliability.
+          </p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Email: comp123@gmail.com</p>
+          <p>Phone: +234 704 697 1369</p>
+        </div>
+        <div>
+          <h4>Account</h4>
+          <p><a href="login.html">Sign in</a></p>
+          <p><a href="register.html">Create account</a></p>
+        </div>
+      </div>
+      <div class="container copyright">
+        <p>© <span id="year">2025</span> MyVTU. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
