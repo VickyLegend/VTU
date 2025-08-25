@@ -12,7 +12,7 @@ family=Inter:wght@400;500;600;700&display=swap"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="auth">
+  <body>
     <!-- Top Bar -->
     <header class="topbar">
       <div class="container row between center-v">
@@ -26,7 +26,8 @@ family=Inter:wght@400;500;600;700&display=swap"
         </nav>
       </div>
     </header>
-    <main class="auth-card card">
+    <div class="auth">
+      <main class="auth-card card">
       <h1>Create your account</h1>
       <p class="muted">It only takes a minute</p>
       <form action="dashboard.html" method="post" class="form">
@@ -49,6 +50,7 @@ family=Inter:wght@400;500;600;700&display=swap"
         Already have an account? <a href="login.html">Login</a>
       </p>
     </main>
+    </div>
     <script>
       let formStarted = false;
       const form = document.querySelector(".form");
