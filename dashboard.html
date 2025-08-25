@@ -10,19 +10,42 @@
 family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="dash">
-    <aside class="sidebar">
-      <a class="brand" href="index.html">MyVTU</a>
-      <nav>
-        <a href="#airtime">Airtime</a>
-        <a href="#data">Data</a>
-        <a href="#cable">Cable TV</a>
-        <a href="#electricity">Electricity</a>
-        <a href="index.html" class="muted">Logout</a>
-      </nav>
-    </aside>
+  <body>
+    <!-- Top Bar -->
+    <header class="topbar">
+      <div class="container row between center-v">
+        <a class="brand" href="index.html">MyVTU</a>
+        <nav class="nav">
+          <a href="index.html#services">Services</a>
+          <a href="index.html#pricing">Pricing</a>
+          <a href="index.html#contact">Contact</a>
+          <a class="btn btn-sm btn-ghost" href="login.html">Login</a>
+          <a class="btn btn-sm" href="register.html">Create Account</a>
+        </nav>
+      </div>
+    </header>
+    <div class="dash">
+      <aside class="sidebar card">
+        <a class="brand" href="index.html">MyVTU</a>
+        <nav>
+          <a href="#airtime">Airtime</a>
+          <a href="#data">Data</a>
+          <a href="#cable">Cable TV</a>
+          <a href="#electricity">Electricity</a>
+          <a href="index.html" class="muted">Logout</a>
+        </nav>
+        <hr />
+        <h3>Transaction History</h3>
+        <div id="transaction-history">
+          <p class="muted">No transactions yet.</p>
+        </div>
+        <h3>Wallet Funding History</h3>
+        <div id="funding-history">
+          <p class="muted">No funding history yet.</p>
+        </div>
+      </aside>
     <main class="workspace">
       <header class="dash-top row between center-v">
         <div>
@@ -33,166 +56,9 @@ family=Inter:wght@400;500;600;700&display=swap"
         </div>
         <div class="wallet card">
           <span class="muted xs">Wallet Balance</span>
-          <strong class="balance">₦0.00</strong>
-        </div>
-      </header>
-      <!-- Airtime -->
-      <section id="airtime" class="card block">
-        <h2>Buy Airtime</h2>
-        <form action="#" method="post" class="grid two">
-          <!-- Replace action with your airtime endpoint -->
-          <label>
-            <span>Phone Number</span>
-            <input type="tel" name="phone" placeholder="08012345678" required />
-          </label>
-          <label>
-            <span>Network</span>
-            <select name="network" required>
-              <option value="">Select network</option>
-              <option>MTN</option>
-              <option>Airtel</option>
-              <option>Glo</option>
-              <option>9mobile</option>
-            </select>
-          </label>
-          7
-          <label>
-            <span>Amount (₦)</span>
-            <input
-              type="number"
-              name="amount"
-              min="50"
-              step="50"
-              placeholder="500"
-              required
-            />
-          </label>
-          <div class="align-end">
-            <button class="btn" type="submit">Purchase</button>
-          </div>
-        </form>
-      </section>
-      <!-- Data -->
-      <section id="data" class="card block">
-        <h2>Buy Data</h2>
-        <form action="#" method="post" class="grid two">
-          <!-- Replace action with your data endpoint -->
-          <label>
-            <span>Phone Number</span>
-            <input type="tel" name="phone" placeholder="08012345678" required />
-          </label>
-          <label>
-            <span>Network</span>
-            <select name="network" required>
-              <option value="">Select network</option>
-              <option>MTN</option>
-              <option>Airtel</option>
-              <option>Glo</option>
-              <option>9mobile</option>
-            </select>
-          </label>
-          <label>
-            <span>Data Plan</span>
-            <select name="plan" required>
-              <option value="">Select a plan</option>
-              <option value="1GB">1GB – ₦300</option>
-              <option value="2GB">2GB – ₦500</option>
-              <option value="5GB">5GB – ₦1,200</option>
-            </select>
-          </label>
-          <div class="align-end">
-            <button class="btn" type="submit">Purchase</button>
-          </div>
-        </form>
-      </section>
-      <!-- Cable TV -->
-      <section id="cable" class="card block">
-        8
-        <h2>Cable TV Subscription</h2>
-        <form action="#" method="post" class="grid two">
-          <!-- Replace action with your cable endpoint -->
-          <label>
-            <span>Provider</span>
-            <select name="provider" required>
-              <option value="">Select provider</option>
-              <option>DSTV</option>
-              <option>GOTV</option>
-              <option>Startimes</option>
-            </select>
-          </label>
-          <label>
-            <span>Smart Card / IUC</span>
-            <input type="text" name="iuc" placeholder="0123456789" required />
-          </label>
-          <label>
-            <span>Package</span>
-            <select name="package" required>
-              <option value="">Select package</option>
-              <option value="basic">Basic</option>
-              <option value="compact">Compact</option>
-              <option value="premium">Premium</option>
-            </select>
-          </label>
-          <div class="align-end">
-            <button class="btn" type="submit">Subscribe</button>
-          </div>
-        </form>
-      </section>
-      <!-- Electricity -->
-      <section id="electricity" class="card block">
-        <h2>Electricity Bills</h2>
-        <form action="#" method="post" class="grid two">
-          <!-- Replace action with your electricity endpoint -->
-          <label>
-            <span>DISCO</span>
-            <select name="disco" required>
-              <option value="">Select DISCO</option>
-              <option>IKEDC</option>
-              <option>EKEDC</option>
-              <option>IBEDC</option>
-              <option>PHED</option>
-              <option>JED</option>
-              <option>KEDCO</option>
-              <option>KAEDCO</option>
-              <option>BEDC</option>
-              9
-              <option>others</option>
-            </select>
-          </label>
-          <label>
-            <span>Meter Type</span>
-            <select name="meter_type" required>
-              <option value="">Select type</option>
-              <option>Prepaid</option>
-              <option>Postpaid</option>
-            </select>
-          </label>
-          <label>
-            <span>Meter Number</span>
-            <input
-              type="text"
-              name="meter"
-              placeholder="12345678901"
-              required
-            />
-          </label>
-          <label>
-            <span>Amount (₦)</span>
-            <input
-              type="number"
-              name="amount"
-              min="500"
-              step="100"
-              placeholder="2000"
-              required
-            />
-          </label>
-          <div class="align-end">
-            <button class="btn" type="submit">Pay Bill</button>
-          </div>
-        </form>
-      </section>
-      <footer class="muted xs center">© 2025 MyVTU</footer>
-    </main>
+          <strong class="balance"></strong>
+          <button class="btn" onclick="location.href='fund.html'" style="margin-top:1rem;">Fund Wallet</button>
+    </div>
+    
   </body>
 </html>
